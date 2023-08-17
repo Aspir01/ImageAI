@@ -1,0 +1,9 @@
+opencv-python
+tensorflow
+keras
+numpy
+pickle-mixin
+matplotlib
+pandas
+flask
+pixellib
