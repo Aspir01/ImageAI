@@ -19,7 +19,7 @@ def predict(image):
     class_index = np.argmax(prediction)
     return classes[class_index]
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
 # @app.route('/predict', methods=['POST'])
 # def process_image():
