@@ -21,7 +21,7 @@ def predict(image):
 
 app = Flask(__name__)
 
-@app.route('/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def process_image():
     image = request.files['image']
     result = predict(image)
