@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import cv2
-from flask import Flask, request
+# from flask import Flask, request
  
 model = tf.keras.models.load_model('model_ok.h5')
  
@@ -21,8 +21,8 @@ def predict(image):
 
 app = Flask(__name__)
 
-@app.route('/predict', methods=['POST'])
-def process_image():
-    image = request.files['image']
-    result = predict(image)
-    return result
+# @app.route('/predict', methods=['POST'])
+# def process_image():
+#     image = request.files['image']
+#     result = predict(image)
+#     return result
